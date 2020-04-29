@@ -7,5 +7,6 @@
 ```java
 int firstNumber = 1;
 ```
+### Матриця розміром 5x5
 
 <img src="https://github.com/ppc-ntu-khpi/masivi-35-DenriUs/blob/master/Result.jpg" width="25%"/>
