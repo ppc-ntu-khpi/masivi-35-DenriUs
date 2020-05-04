@@ -17,9 +17,9 @@ public class Exercise {
                 } else {
                     if (i > 0 && (j == 0 || j == 1)) {
                         if (j == 0) {
-                            matrix[i][j] = matrix[i - 1][j + 3] + matrix[i - 1][j + 4];
+                            matrix[i][j] = matrix[i - 1][matrix[0].length - 1] + matrix[i - 1][matrix[0].length - 2];
                         } else {
-                            matrix[i][j] = matrix[i][j - 1] + matrix [i - 1][j + 3];
+                            matrix[i][j] = matrix[i][j - 1] + matrix [i - 1][matrix[0].length - 1];
                         }
                     } else {
                         matrix[i][j] = matrix[i][j - 1] + matrix[i][j - 2];
@@ -36,6 +36,7 @@ public class Exercise {
      * @param matrix numeric matrix
      */
     public static void printIntMatrix(int[][] matrix) {
+        System.out.println();
         for (int[] row : matrix) {
             System.out.println(Arrays.toString(row));
         }
